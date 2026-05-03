@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>إعدادات الروابط اليومية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>إدارة الروابط</h2>
+            <div class="header-tools">
+                <span style="font-size: 13px;">تفعيل التشغيل:</span>
+                <label class="switch">
+                    <input type="checkbox" id="masterToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 15px; display: flex; gap: 10px;">
+            <button id="exportBtn" class="btn tool-btn">تصدير (Backup)</button>
+            <button id="importBtn" class="btn tool-btn">استيراد</button>
+            <input type="file" id="fileInput" style="display:none" accept=".json">
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="urlInput" placeholder="رابط أو كلمة للبحث">
+            <button id="addBtn" class="btn add-btn">إضافة</button>
+        </div>
+        
+        <ul id="urlList"></ul>
+
+        <div class="developer-footer">
+            تطوير المهندس: <a href="https://www.linkedin.com/in/mahmoud-ghosheh/" target="_blank" class="developer-link">Mahmoud Ghosheh</a>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
