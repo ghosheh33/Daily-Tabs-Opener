@@ -19,9 +19,23 @@
             </div>
         </div>
 
-        <div style="margin-bottom: 15px; display: flex; gap: 10px;">
+        <div class="days-group">
+            <div class="days-title">أيام تشغيل الروابط (جدولة):</div>
+            <div id="daysSelector" class="days-container">
+                <label><input type="checkbox" value="0"> الأحد</label>
+                <label><input type="checkbox" value="1"> الإثنين</label>
+                <label><input type="checkbox" value="2"> الثلاثاء</label>
+                <label><input type="checkbox" value="3"> الأربعاء</label>
+                <label><input type="checkbox" value="4"> الخميس</label>
+                <label><input type="checkbox" value="5"> الجمعة</label>
+                <label><input type="checkbox" value="6"> السبت</label>
+            </div>
+        </div>
+
+        <div class="tools-row">
             <button id="exportBtn" class="btn tool-btn">تصدير (Backup)</button>
             <button id="importBtn" class="btn tool-btn">استيراد</button>
+            <button id="openAllBtn" class="btn tool-btn" style="background: #8b5cf6;">فتح الجميع الآن</button>
             <input type="file" id="fileInput" style="display:none" accept=".json">
         </div>
 
